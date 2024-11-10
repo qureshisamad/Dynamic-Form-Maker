@@ -10,6 +10,7 @@
       "@/*": ["./src/*"]
     },
     "noEmitOnError": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": false,
   }
 }
