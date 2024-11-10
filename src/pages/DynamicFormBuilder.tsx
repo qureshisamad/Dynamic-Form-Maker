@@ -758,7 +758,7 @@ const DynamicFormBuilder = () => {
                   <div className="flex items-center space-x-2">
                     {field.type === FIELD_TYPES.SECTION && (
                       <Button
-                        variant="ghost"
+                        variant="outline"
                         size="icon"
                         onClick={() => toggleSection(field.id)}
                       >
@@ -782,7 +782,7 @@ const DynamicFormBuilder = () => {
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Button
-                          variant="ghost"
+                          variant="outline"
                           size="icon"
                           onClick={() => moveFieldUp(field.id, parentId)}
                           disabled={index === 0}
@@ -796,7 +796,7 @@ const DynamicFormBuilder = () => {
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Button
-                          variant="ghost"
+                          variant="outline"
                           size="icon"
                           onClick={() => moveFieldDown(field.id, parentId)}
                           disabled={index === fields.length - 1}
@@ -810,7 +810,7 @@ const DynamicFormBuilder = () => {
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Button
-                          variant="ghost"
+                          variant="outline"
                           size="icon"
                           onClick={() => setShowValidationSettings(field.id)}
                         >
@@ -1040,10 +1040,10 @@ const DynamicFormBuilder = () => {
       </div>
       
       <Tabs value={activeTab} onValueChange={setActiveTab}>
-        <TabsList className="mb-4">
-          <TabsTrigger value="builder">Builder</TabsTrigger>
-          <TabsTrigger value="preview">Preview</TabsTrigger>
-          <TabsTrigger value="saved">Saved Forms</TabsTrigger>
+        <TabsList className="mb-4" >
+          <TabsTrigger value="builder" style={{background: 'white', marginLeft: '10px'}}>Builder</TabsTrigger>
+          <TabsTrigger value="preview" style={{background: 'white', marginLeft: '10px'}}>Preview</TabsTrigger>
+          <TabsTrigger value="saved" style={{background: 'white', marginLeft: '10px'}}>Saved Forms</TabsTrigger>
         </TabsList>
   
         <TabsContent value="builder">
